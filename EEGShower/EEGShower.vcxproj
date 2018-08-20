@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3C4EC80B-510B-4915-AE66-4C1E6019EC15}</ProjectGuid>
+    <RootNamespace>EEGShower</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;DLL_EXPORT;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../common;../common/ctrl</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>../Debug/picasso2.lib;../Debug/EmotivReader.lib;../lib/edk.lib;../lib/edk_utils.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AddModuleNamesToAssembly>..\lib\edk.dll;..\lib\edk_utils.dll;%(AddModuleNamesToAssembly)</AddModuleNamesToAssembly>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\common\ctrl\filelist.txt" />
+    <None Include="..\common\ctrl\ReadMe.txt" />
+    <None Include="EEGShower.aps" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\bg.bmp" />
+    <None Include="res\EEGShower.ico" />
+    <None Include="res\EEGShower.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\Common.h" />
+    <ClInclude Include="..\common\ctrl\adxfunction.h" />
+    <ClInclude Include="..\common\ctrl\annotationtool.h" />
+    <ClInclude Include="..\common\ctrl\areaseries.h" />
+    <ClInclude Include="..\common\ctrl\arrowseries.h" />
+    <ClInclude Include="..\common\ctrl\aspect.h" />
+    <ClInclude Include="..\common\ctrl\averagefunction.h" />
+    <ClInclude Include="..\common\ctrl\axes.h" />
+    <ClInclude Include="..\common\ctrl\axis.h" />
+    <ClInclude Include="..\common\ctrl\axisarrowtool.h" />
+    <ClInclude Include="..\common\ctrl\axislabels.h" />
+    <ClInclude Include="..\common\ctrl\axistitle.h" />
+    <ClInclude Include="..\common\ctrl\bar3dseries.h" />
+    <ClInclude Include="..\common\ctrl\barjoinseries.h" />
+    <ClInclude Include="..\common\ctrl\barseries.h" />
+    <ClInclude Include="..\common\ctrl\bezierseries.h" />
+    <ClInclude Include="..\common\ctrl\bmpexport.h" />
+    <ClInclude Include="..\common\ctrl\bollingerfunction.h" />
+    <ClInclude Include="..\common\ctrl\boxplotseries.h" />
+    <ClInclude Include="..\common\ctrl\brush.h" />
+    <ClInclude Include="..\common\ctrl\bubbleseries.h" />
+    <ClInclude Include="..\common\ctrl\calendarcell.h" />
+    <ClInclude Include="..\common\ctrl\calendarcellupper.h" />
+    <ClInclude Include="..\common\ctrl\calendarseries.h" />
+    <ClInclude Include="..\common\ctrl\candleseries.h" />
+    <ClInclude Include="..\common\ctrl\canvas.h" />
+    <ClInclude Include="..\common\ctrl\charteditorpanel.h" />
+    <ClInclude Include="..\common\ctrl\chartfont.h" />
+    <ClInclude Include="..\common\ctrl\chartgrid.h" />
+    <ClInclude Include="..\common\ctrl\chartgridcols.h" />
+    <ClInclude Include="..\common\ctrl\chartgridnavigator.h" />
+    <ClInclude Include="..\common\ctrl\chartgridrows.h" />
+    <ClInclude Include="..\common\ctrl\chartimagetool.h" />
+    <ClInclude Include="..\common\ctrl\chartpagenavigator.h" />
+    <ClInclude Include="..\common\ctrl\circlelabels.h" />
+    <ClInclude Include="..\common\ctrl\clockseries.h" />
+    <ClInclude Include="..\common\ctrl\colorbandtool.h" />
+    <ClInclude Include="..\common\ctrl\colorgridseries.h" />
+    <ClInclude Include="..\common\ctrl\colorlinetool.h" />
+    <ClInclude Include="..\common\ctrl\contourlevel.h" />
+    <ClInclude Include="..\common\ctrl\contourlevels.h" />
+    <ClInclude Include="..\common\ctrl\contourseries.h" />
+    <ClInclude Include="..\common\ctrl\cursortool.h" />
+    <ClInclude Include="..\common\ctrl\curvefittingfunction.h" />
+    <ClInclude Include="..\common\ctrl\donutseries.h" />
+    <ClInclude Include="..\common\ctrl\dragmarkstool.h" />
+    <ClInclude Include="..\common\ctrl\drawline.h" />
+    <ClInclude Include="..\common\ctrl\drawlinelist.h" />
+    <ClInclude Include="..\common\ctrl\drawlinetool.h" />
+    <ClInclude Include="..\common\ctrl\environment.h" />
+    <ClInclude Include="..\common\ctrl\errorbarseries.h" />
+    <ClInclude Include="..\common\ctrl\errorseries.h" />
+    <ClInclude Include="..\common\ctrl\expavgfunction.h" />
+    <ClInclude Include="..\common\ctrl\explodedslices.h" />
+    <ClInclude Include="..\common\ctrl\export.h" />
+    <ClInclude Include="..\common\ctrl\fastlineseries.h" />
+    <ClInclude Include="..\common\ctrl\funnelseries.h" />
+    <ClInclude Include="..\common\ctrl\ganttseries.h" />
+    <ClInclude Include="..\common\ctrl\gifexport.h" />
+    <ClInclude Include="..\common\ctrl\gradient.h" />
+    <ClInclude Include="..\common\ctrl\highlowseries.h" />
+    <ClInclude Include="..\common\ctrl\histogramseries.h" />
+    <ClInclude Include="..\common\ctrl\horizbarseries.h" />
+    <ClInclude Include="..\common\ctrl\horizboxplotseries.h" />
+    <ClInclude Include="..\common\ctrl\horizlineseries.h" />
+    <ClInclude Include="..\common\ctrl\htmlexport.h" />
+    <ClInclude Include="..\common\ctrl\imagebarseries.h" />
+    <ClInclude Include="..\common\ctrl\import.h" />
+    <ClInclude Include="..\common\ctrl\jpegexport.h" />
+    <ClInclude Include="..\common\ctrl\legend.h" />
+    <ClInclude Include="..\common\ctrl\legendsymbol.h" />
+    <ClInclude Include="..\common\ctrl\lineseries.h" />
+    <ClInclude Include="..\common\ctrl\macdfunction.h" />
+    <ClInclude Include="..\common\ctrl\mappolygon.h" />
+    <ClInclude Include="..\common\ctrl\mappolygonlist.h" />
+    <ClInclude Include="..\common\ctrl\mapseries.h" />
+    <ClInclude Include="..\common\ctrl\marks.h" />
+    <ClInclude Include="..\common\ctrl\markstiptool.h" />
+    <ClInclude Include="..\common\ctrl\metafileexport.h" />
+    <ClInclude Include="..\common\ctrl\movingavgfunction.h" />
+    <ClInclude Include="..\common\ctrl\nativeexport.h" />
+    <ClInclude Include="..\common\ctrl\nearesttool.h" />
+    <ClInclude Include="..\common\ctrl\page.h" />
+    <ClInclude Include="..\common\ctrl\pagenumtool.h" />
+    <ClInclude Include="..\common\ctrl\panel.h" />
+    <ClInclude Include="..\common\ctrl\pcxexport.h" />
+    <ClInclude Include="..\common\ctrl\pen.h" />
+    <ClInclude Include="..\common\ctrl\pieotherslice.h" />
+    <ClInclude Include="..\common\ctrl\pieseries.h" />
+    <ClInclude Include="..\common\ctrl\pngexport.h" />
+    <ClInclude Include="..\common\ctrl\point3dseries.h" />
+    <ClInclude Include="..\common\ctrl\pointer.h" />
+    <ClInclude Include="..\common\ctrl\pointseries.h" />
+    <ClInclude Include="..\common\ctrl\polarseries.h" />
+    <ClInclude Include="..\common\ctrl\printer.h" />
+    <ClInclude Include="..\common\ctrl\pyramidseries.h" />
+    <ClInclude Include="..\common\ctrl\radarseries.h" />
+    <ClInclude Include="..\common\ctrl\resource.h" />
+    <ClInclude Include="..\common\ctrl\rmsfunction.h" />
+    <ClInclude Include="..\common\ctrl\rotatetool.h" />
+    <ClInclude Include="..\common\ctrl\rsifunction.h" />
+    <ClInclude Include="..\common\ctrl\scroll.h" />
+    <ClInclude Include="..\common\ctrl\series.h" />
+    <ClInclude Include="..\common\ctrl\seriesmarkposition.h" />
+    <ClInclude Include="..\common\ctrl\seriesmarkspositions.h" />
+    <ClInclude Include="..\common\ctrl\seriestextfield.h" />
+    <ClInclude Include="..\common\ctrl\seriestextfields.h" />
+    <ClInclude Include="..\common\ctrl\seriestextsource.h" />
+    <ClInclude Include="..\common\ctrl\shapeseries.h" />
+    <ClInclude Include="..\common\ctrl\smithseries.h" />
+    <ClInclude Include="..\common\ctrl\stddeviationfunction.h" />
+    <ClInclude Include="..\common\ctrl\strings.h" />
+    <ClInclude Include="..\common\ctrl\surfaceseries.h" />
+    <ClInclude Include="..\common\ctrl\tchart.h" />
+    <ClInclude Include="..\common\ctrl\TeeChartDefines.h" />
+    <ClInclude Include="..\common\ctrl\teecommander.h" />
+    <ClInclude Include="..\common\ctrl\teeeditor.h" />
+    <ClInclude Include="..\common\ctrl\teeeditoroptions.h" />
+    <ClInclude Include="..\common\ctrl\teeeditorshowpages.h" />
+    <ClInclude Include="..\common\ctrl\teefont.h" />
+    <ClInclude Include="..\common\ctrl\teefunction.h" />
+    <ClInclude Include="..\common\ctrl\teelistbox.h" />
+    <ClInclude Include="..\common\ctrl\teeopengl.h" />
+    <ClInclude Include="..\common\ctrl\teepanelslist.h" />
+    <ClInclude Include="..\common\ctrl\teepoint2d.h" />
+    <ClInclude Include="..\common\ctrl\teepoint3d.h" />
+    <ClInclude Include="..\common\ctrl\teepreviewer.h" />
+    <ClInclude Include="..\common\ctrl\teeprevieweroptions.h" />
+    <ClInclude Include="..\common\ctrl\teepreviewpanel.h" />
+    <ClInclude Include="..\common\ctrl\teeshadow.h" />
+    <ClInclude Include="..\common\ctrl\teeshapepanel.h" />
+    <ClInclude Include="..\common\ctrl\textexport.h" />
+    <ClInclude Include="..\common\ctrl\titles.h" />
+    <ClInclude Include="..\common\ctrl\toollist.h" />
+    <ClInclude Include="..\common\ctrl\tools.h" />
+    <ClInclude Include="..\common\ctrl\trisurfaceseries.h" />
+    <ClInclude Include="..\common\ctrl\valuelist.h" />
+    <ClInclude Include="..\common\ctrl\valuelists.h" />
+    <ClInclude Include="..\common\ctrl\volumeseries.h" />
+    <ClInclude Include="..\common\ctrl\wall.h" />
+    <ClInclude Include="..\common\ctrl\walls.h" />
+    <ClInclude Include="..\common\ctrl\waterfallseries.h" />
+    <ClInclude Include="..\common\ctrl\windroseseries.h" />
+    <ClInclude Include="..\common\ctrl\xlsexport.h" />
+    <ClInclude Include="..\common\ctrl\xmlexport.h" />
+    <ClInclude Include="..\common\ctrl\zoom.h" />
+    <ClInclude Include="..\common\EEgMemManager.h" />
+    <ClInclude Include="..\common\FileProcess.h" />
+    <ClInclude Include="..\common\ManagedData.h" />
+    <ClInclude Include="..\common\ProcessMemory.h" />
+    <ClInclude Include="..\common\Streamoper.h" />
+    <ClInclude Include="..\common\Stringoper.h" />
+    <ClInclude Include="BasicDevice.h" />
+    <ClInclude Include="DeviceLoader.h" />
+    <ClInclude Include="EEGShower.h" />
+    <ClInclude Include="EEGShowerDlg.h" />
+    <ClInclude Include="picasso.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Structdefine.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\common\ctrl\adxfunction.cpp" />
+    <ClCompile Include="..\common\ctrl\annotationtool.cpp" />
+    <ClCompile Include="..\common\ctrl\areaseries.cpp" />
+    <ClCompile Include="..\common\ctrl\arrowseries.cpp" />
+    <ClCompile Include="..\common\ctrl\aspect.cpp" />
+    <ClCompile Include="..\common\ctrl\averagefunction.cpp" />
+    <ClCompile Include="..\common\ctrl\axes.cpp" />
+    <ClCompile Include="..\common\ctrl\axis.cpp" />
+    <ClCompile Include="..\common\ctrl\axisarrowtool.cpp" />
+    <ClCompile Include="..\common\ctrl\axislabels.cpp" />
+    <ClCompile Include="..\common\ctrl\axistitle.cpp" />
+    <ClCompile Include="..\common\ctrl\bar3dseries.cpp" />
+    <ClCompile Include="..\common\ctrl\barjoinseries.cpp" />
+    <ClCompile Include="..\common\ctrl\barseries.cpp" />
+    <ClCompile Include="..\common\ctrl\bezierseries.cpp" />
+    <ClCompile Include="..\common\ctrl\bmpexport.cpp" />
+    <ClCompile Include="..\common\ctrl\bollingerfunction.cpp" />
+    <ClCompile Include="..\common\ctrl\boxplotseries.cpp" />
+    <ClCompile Include="..\common\ctrl\brush.cpp" />
+    <ClCompile Include="..\common\ctrl\bubbleseries.cpp" />
+    <ClCompile Include="..\common\ctrl\calendarcell.cpp" />
+    <ClCompile Include="..\common\ctrl\calendarcellupper.cpp" />
+    <ClCompile Include="..\common\ctrl\calendarseries.cpp" />
+    <ClCompile Include="..\common\ctrl\candleseries.cpp" />
+    <ClCompile Include="..\common\ctrl\canvas.cpp" />
+    <ClCompile Include="..\common\ctrl\charteditorpanel.cpp" />
+    <ClCompile Include="..\common\ctrl\chartfont.cpp" />
+    <ClCompile Include="..\common\ctrl\chartgrid.cpp" />
+    <ClCompile Include="..\common\ctrl\chartgridcols.cpp" />
+    <ClCompile Include="..\common\ctrl\chartgridnavigator.cpp" />
+    <ClCompile Include="..\common\ctrl\chartgridrows.cpp" />
+    <ClCompile Include="..\common\ctrl\chartimagetool.cpp" />
+    <ClCompile Include="..\common\ctrl\chartpagenavigator.cpp" />
+    <ClCompile Include="..\common\ctrl\circlelabels.cpp" />
+    <ClCompile Include="..\common\ctrl\clockseries.cpp" />
+    <ClCompile Include="..\common\ctrl\colorbandtool.cpp" />
+    <ClCompile Include="..\common\ctrl\colorgridseries.cpp" />
+    <ClCompile Include="..\common\ctrl\colorlinetool.cpp" />
+    <ClCompile Include="..\common\ctrl\contourlevel.cpp" />
+    <ClCompile Include="..\common\ctrl\contourlevels.cpp" />
+    <ClCompile Include="..\common\ctrl\contourseries.cpp" />
+    <ClCompile Include="..\common\ctrl\cursortool.cpp" />
+    <ClCompile Include="..\common\ctrl\curvefittingfunction.cpp" />
+    <ClCompile Include="..\common\ctrl\donutseries.cpp" />
+    <ClCompile Include="..\common\ctrl\dragmarkstool.cpp" />
+    <ClCompile Include="..\common\ctrl\drawline.cpp" />
+    <ClCompile Include="..\common\ctrl\drawlinelist.cpp" />
+    <ClCompile Include="..\common\ctrl\drawlinetool.cpp" />
+    <ClCompile Include="..\common\ctrl\environment.cpp" />
+    <ClCompile Include="..\common\ctrl\errorbarseries.cpp" />
+    <ClCompile Include="..\common\ctrl\errorseries.cpp" />
+    <ClCompile Include="..\common\ctrl\expavgfunction.cpp" />
+    <ClCompile Include="..\common\ctrl\explodedslices.cpp" />
+    <ClCompile Include="..\common\ctrl\export.cpp" />
+    <ClCompile Include="..\common\ctrl\fastlineseries.cpp" />
+    <ClCompile Include="..\common\ctrl\funnelseries.cpp" />
+    <ClCompile Include="..\common\ctrl\ganttseries.cpp" />
+    <ClCompile Include="..\common\ctrl\gifexport.cpp" />
+    <ClCompile Include="..\common\ctrl\gradient.cpp" />
+    <ClCompile Include="..\common\ctrl\highlowseries.cpp" />
+    <ClCompile Include="..\common\ctrl\histogramseries.cpp" />
+    <ClCompile Include="..\common\ctrl\horizbarseries.cpp" />
+    <ClCompile Include="..\common\ctrl\horizboxplotseries.cpp" />
+    <ClCompile Include="..\common\ctrl\horizlineseries.cpp" />
+    <ClCompile Include="..\common\ctrl\htmlexport.cpp" />
+    <ClCompile Include="..\common\ctrl\imagebarseries.cpp" />
+    <ClCompile Include="..\common\ctrl\import.cpp" />
+    <ClCompile Include="..\common\ctrl\jpegexport.cpp" />
+    <ClCompile Include="..\common\ctrl\legend.cpp" />
+    <ClCompile Include="..\common\ctrl\legendsymbol.cpp" />
+    <ClCompile Include="..\common\ctrl\lineseries.cpp" />
+    <ClCompile Include="..\common\ctrl\macdfunction.cpp" />
+    <ClCompile Include="..\common\ctrl\mappolygon.cpp" />
+    <ClCompile Include="..\common\ctrl\mappolygonlist.cpp" />
+    <ClCompile Include="..\common\ctrl\mapseries.cpp" />
+    <ClCompile Include="..\common\ctrl\marks.cpp" />
+    <ClCompile Include="..\common\ctrl\markstiptool.cpp" />
+    <ClCompile Include="..\common\ctrl\metafileexport.cpp" />
+    <ClCompile Include="..\common\ctrl\movingavgfunction.cpp" />
+    <ClCompile Include="..\common\ctrl\nativeexport.cpp" />
+    <ClCompile Include="..\common\ctrl\nearesttool.cpp" />
+    <ClCompile Include="..\common\ctrl\page.cpp" />
+    <ClCompile Include="..\common\ctrl\pagenumtool.cpp" />
+    <ClCompile Include="..\common\ctrl\panel.cpp" />
+    <ClCompile Include="..\common\ctrl\pcxexport.cpp" />
+    <ClCompile Include="..\common\ctrl\pen.cpp" />
+    <ClCompile Include="..\common\ctrl\pieotherslice.cpp" />
+    <ClCompile Include="..\common\ctrl\pieseries.cpp" />
+    <ClCompile Include="..\common\ctrl\pngexport.cpp" />
+    <ClCompile Include="..\common\ctrl\point3dseries.cpp" />
+    <ClCompile Include="..\common\ctrl\pointer.cpp" />
+    <ClCompile Include="..\common\ctrl\pointseries.cpp" />
+    <ClCompile Include="..\common\ctrl\polarseries.cpp" />
+    <ClCompile Include="..\common\ctrl\printer.cpp" />
+    <ClCompile Include="..\common\ctrl\pyramidseries.cpp" />
+    <ClCompile Include="..\common\ctrl\radarseries.cpp" />
+    <ClCompile Include="..\common\ctrl\rmsfunction.cpp" />
+    <ClCompile Include="..\common\ctrl\rotatetool.cpp" />
+    <ClCompile Include="..\common\ctrl\rsifunction.cpp" />
+    <ClCompile Include="..\common\ctrl\scroll.cpp" />
+    <ClCompile Include="..\common\ctrl\series.cpp" />
+    <ClCompile Include="..\common\ctrl\seriesmarkposition.cpp" />
+    <ClCompile Include="..\common\ctrl\seriesmarkspositions.cpp" />
+    <ClCompile Include="..\common\ctrl\seriestextfield.cpp" />
+    <ClCompile Include="..\common\ctrl\seriestextfields.cpp" />
+    <ClCompile Include="..\common\ctrl\seriestextsource.cpp" />
+    <ClCompile Include="..\common\ctrl\shapeseries.cpp" />
+    <ClCompile Include="..\common\ctrl\smithseries.cpp" />
+    <ClCompile Include="..\common\ctrl\stddeviationfunction.cpp" />
+    <ClCompile Include="..\common\ctrl\strings.cpp" />
+    <ClCompile Include="..\common\ctrl\surfaceseries.cpp" />
+    <ClCompile Include="..\common\ctrl\tchart.cpp" />
+    <ClCompile Include="..\common\ctrl\teecommander.cpp" />
+    <ClCompile Include="..\common\ctrl\teeeditor.cpp" />
+    <ClCompile Include="..\common\ctrl\teeeditoroptions.cpp" />
+    <ClCompile Include="..\common\ctrl\teeeditorshowpages.cpp" />
+    <ClCompile Include="..\common\ctrl\teefont.cpp" />
+    <ClCompile Include="..\common\ctrl\teefunction.cpp" />
+    <ClCompile Include="..\common\ctrl\teelistbox.cpp" />
+    <ClCompile Include="..\common\ctrl\teeopengl.cpp" />
+    <ClCompile Include="..\common\ctrl\teepanelslist.cpp" />
+    <ClCompile Include="..\common\ctrl\teepoint2d.cpp" />
+    <ClCompile Include="..\common\ctrl\teepoint3d.cpp" />
+    <ClCompile Include="..\common\ctrl\teepreviewer.cpp" />
+    <ClCompile Include="..\common\ctrl\teeprevieweroptions.cpp" />
+    <ClCompile Include="..\common\ctrl\teepreviewpanel.cpp" />
+    <ClCompile Include="..\common\ctrl\teeshadow.cpp" />
+    <ClCompile Include="..\common\ctrl\teeshapepanel.cpp" />
+    <ClCompile Include="..\common\ctrl\textexport.cpp" />
+    <ClCompile Include="..\common\ctrl\titles.cpp" />
+    <ClCompile Include="..\common\ctrl\toollist.cpp" />
+    <ClCompile Include="..\common\ctrl\tools.cpp" />
+    <ClCompile Include="..\common\ctrl\trisurfaceseries.cpp" />
+    <ClCompile Include="..\common\ctrl\valuelist.cpp" />
+    <ClCompile Include="..\common\ctrl\valuelists.cpp" />
+    <ClCompile Include="..\common\ctrl\volumeseries.cpp" />
+    <ClCompile Include="..\common\ctrl\wall.cpp" />
+    <ClCompile Include="..\common\ctrl\walls.cpp" />
+    <ClCompile Include="..\common\ctrl\waterfallseries.cpp" />
+    <ClCompile Include="..\common\ctrl\windroseseries.cpp" />
+    <ClCompile Include="..\common\ctrl\xlsexport.cpp" />
+    <ClCompile Include="..\common\ctrl\xmlexport.cpp" />
+    <ClCompile Include="..\common\ctrl\zoom.cpp" />
+    <ClCompile Include="..\common\EEgMemManager.cpp" />
+    <ClCompile Include="..\common\FileProcess.cpp" />
+    <ClCompile Include="..\common\ManagedData.cpp" />
+    <ClCompile Include="..\common\ProcessMemory.cpp" />
+    <ClCompile Include="..\common\Streamoper.cpp" />
+    <ClCompile Include="..\common\Stringoper.cpp" />
+    <ClCompile Include="BasicDevice.cpp" />
+    <ClCompile Include="DeviceLoader.cpp" />
+    <ClCompile Include="EEGShower.cpp" />
+    <ClCompile Include="EEGShowerDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EEGShower.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="EEGShower.rc" _x007B_B6C10532-FB89-11D4-93C9-006008A7EED4_x007D_="CTeecommander" _x007B_B6C10489-FB89-11D4-93C9-006008A7EED4_x007D_="CTchart" _x007B_4061F8F2-1D1C-11D5-9401-006008A7EED4_x007D_="CSeriestextsource1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

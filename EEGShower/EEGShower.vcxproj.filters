@@ -1,0 +1,993 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ctrl">
+      <UniqueIdentifier>{ab89036d-09a6-4099-a435-487d1678533c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\EEGShower.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\EEGShower.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="EEGShower.aps" />
+    <None Include="res\bg.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\common\ctrl\filelist.txt">
+      <Filter>ctrl</Filter>
+    </None>
+    <None Include="..\common\ctrl\ReadMe.txt">
+      <Filter>ctrl</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EEGShower.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EEGShowerDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicDevice.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceLoader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Structdefine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="picasso.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\Common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\Streamoper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\Stringoper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\EEgMemManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ProcessMemory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\adxfunction.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\annotationtool.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\areaseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\arrowseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\aspect.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\averagefunction.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\axes.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\axis.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\axisarrowtool.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\axislabels.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\axistitle.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\bar3dseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\barjoinseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\barseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\bezierseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\bmpexport.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\bollingerfunction.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\boxplotseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\brush.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\bubbleseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\calendarcell.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\calendarcellupper.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\calendarseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\candleseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\canvas.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\charteditorpanel.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\chartfont.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\chartgrid.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\chartgridcols.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\chartgridnavigator.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\chartgridrows.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\chartimagetool.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\chartpagenavigator.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\circlelabels.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\clockseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\colorbandtool.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\colorgridseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\colorlinetool.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\contourlevel.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\contourlevels.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\contourseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\cursortool.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\curvefittingfunction.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\donutseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\dragmarkstool.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\drawline.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\drawlinelist.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\drawlinetool.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\environment.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\errorbarseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\errorseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\expavgfunction.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\explodedslices.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\export.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\fastlineseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\funnelseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\ganttseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\gifexport.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\gradient.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\highlowseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\histogramseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\horizbarseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\horizboxplotseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\horizlineseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\htmlexport.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\imagebarseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\import.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\jpegexport.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\legend.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\legendsymbol.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\lineseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\macdfunction.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\mappolygon.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\mappolygonlist.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\mapseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\marks.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\markstiptool.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\metafileexport.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\movingavgfunction.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\nativeexport.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\nearesttool.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\page.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\pagenumtool.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\panel.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\pcxexport.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\pen.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\pieotherslice.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\pieseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\pngexport.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\point3dseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\pointer.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\pointseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\polarseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\printer.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\pyramidseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\radarseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\resource.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\rmsfunction.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\rotatetool.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\rsifunction.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\scroll.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\series.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\seriesmarkposition.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\seriesmarkspositions.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\seriestextfield.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\seriestextfields.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\seriestextsource.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\shapeseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\smithseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\stddeviationfunction.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\strings.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\surfaceseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\tchart.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\TeeChartDefines.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\teecommander.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\teeeditor.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\teeeditoroptions.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\teeeditorshowpages.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\teefont.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\teefunction.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\teelistbox.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\teeopengl.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\teepanelslist.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\teepoint2d.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\teepoint3d.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\teepreviewer.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\teeprevieweroptions.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\teepreviewpanel.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\teeshadow.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\teeshapepanel.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\textexport.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\titles.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\toollist.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\tools.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\trisurfaceseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\valuelist.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\valuelists.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\volumeseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\wall.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\walls.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\waterfallseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\windroseseries.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\xlsexport.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\xmlexport.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ctrl\zoom.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\FileProcess.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ManagedData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EEGShower.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EEGShowerDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicDevice.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceLoader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\Streamoper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\Stringoper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\EEgMemManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ProcessMemory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\adxfunction.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\annotationtool.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\areaseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\arrowseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\aspect.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\averagefunction.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\axes.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\axis.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\axisarrowtool.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\axislabels.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\axistitle.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\bar3dseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\barjoinseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\barseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\bezierseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\bmpexport.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\bollingerfunction.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\boxplotseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\brush.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\bubbleseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\calendarcell.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\calendarcellupper.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\calendarseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\candleseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\canvas.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\charteditorpanel.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\chartfont.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\chartgrid.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\chartgridcols.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\chartgridnavigator.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\chartgridrows.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\chartimagetool.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\chartpagenavigator.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\circlelabels.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\clockseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\colorbandtool.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\colorgridseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\colorlinetool.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\contourlevel.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\contourlevels.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\contourseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\cursortool.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\curvefittingfunction.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\donutseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\dragmarkstool.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\drawline.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\drawlinelist.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\drawlinetool.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\environment.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\errorbarseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\errorseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\expavgfunction.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\explodedslices.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\export.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\fastlineseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\funnelseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\ganttseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\gifexport.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\gradient.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\highlowseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\histogramseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\horizbarseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\horizboxplotseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\horizlineseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\htmlexport.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\imagebarseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\import.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\jpegexport.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\legend.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\legendsymbol.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\lineseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\macdfunction.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\mappolygon.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\mappolygonlist.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\mapseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\marks.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\markstiptool.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\metafileexport.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\movingavgfunction.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\nativeexport.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\nearesttool.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\page.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\pagenumtool.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\panel.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\pcxexport.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\pen.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\pieotherslice.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\pieseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\pngexport.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\point3dseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\pointer.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\pointseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\polarseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\printer.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\pyramidseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\radarseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\rmsfunction.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\rotatetool.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\rsifunction.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\scroll.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\series.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\seriesmarkposition.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\seriesmarkspositions.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\seriestextfield.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\seriestextfields.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\seriestextsource.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\shapeseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\smithseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\stddeviationfunction.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\strings.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\surfaceseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\tchart.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\teecommander.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\teeeditor.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\teeeditoroptions.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\teeeditorshowpages.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\teefont.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\teefunction.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\teelistbox.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\teeopengl.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\teepanelslist.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\teepoint2d.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\teepoint3d.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\teepreviewer.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\teeprevieweroptions.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\teepreviewpanel.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\teeshadow.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\teeshapepanel.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\textexport.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\titles.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\toollist.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\tools.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\trisurfaceseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\valuelist.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\valuelists.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\volumeseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\wall.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\walls.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\waterfallseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\windroseseries.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\xlsexport.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\xmlexport.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ctrl\zoom.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\FileProcess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ManagedData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EEGShower.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
